@@ -1,0 +1,167 @@
+*{
+}
+
+html{
+}
+
+nav{
+    padding:2%;
+}
+
+nav>a{
+    color:rgb(255, 255, 255);
+    display:block;
+    border:1px solid black;
+    background:rgb(150, 56, 39);
+    padding:5%;
+    margin:2%;
+    text-decoration:none;
+}
+
+body{
+    margin:0;
+    background:rgb(14, 0, 26)
+}
+
+header{
+}
+
+main{
+}
+
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:6.5ch;
+    text-align:center;
+    letter-spacing:1.5ch;
+    color:rgba(255, 0, 0, 0.7);
+    text-shadow:8px 8px 3px rgba(2, 131, 2, 0.5), -8px -8px 3px rgba(0, 0, 255, 0.3);
+}
+
+
+
+h2{
+    color:rgb(255, 255, 117);
+    text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul>ul{
+    list-style:none;
+    margin-left:-10%;
+    font-style:italic;
+    color:rgb(253, 253, 189);
+}
+
+ul{
+    color:rgb(207, 107, 91);
+}
+
+a{
+}
+
+nav>a:hover{
+    transition-property:background, padding;
+    background:rgb(146, 0, 0);
+    padding:3%;;
+    transition-duration:0.3s;
+    transition-timing-function:ease-out;
+    transition-delay:.2s;
+}
+
+p{
+    text-indent:1ch;
+    margin:0;
+    color:rgb(253, 253, 189);
+    transition-property:color;
+    transition-duration:.5s;
+    transition-timing-function:linear;
+    transition-delay:.4s;
+}
+
+footer{
+    border:1px solid black;
+}
+
+section{
+}
+
+.wrap{
+    display:grid;
+    grid-template-areas:
+    'headline headline headline headline headline  headline'
+    'navigation navigation content content2 content2 sidebar'
+    'navigation navigation content content3 content3 sidebar'
+    'navigation navigation content4 content4 content4 sidebar'
+    'navigation navigation content5 content5 ... sidebar'
+    'navigation navigation content5 content5 ... sidebar'
+    'footnote footnote footnote footnote footnote footnote';
+    grid-gap:10px;
+    grid-auto-columns:minmax(120px, auto);
+    grid-auto-rows:minmax(100px, auto);
+    padding:1%;
+}
+
+.mark{
+    color:rgb(207, 107, 91);
+}
+
+div{
+    border:1px solid rgba(172, 158, 255, 0.459);
+    background:rgb(0, 14, 44);
+    border-radius:5px;
+    padding:4%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition-property:background, border;
+    transition-duration:.5s;
+    transition-timing-function:linear;
+    transition-delay:.4s ease-in 1s;
+}
+
+.headline{
+    grid-area:headline;
+    background-image:url(../PIC/transition.png);
+    background-size:100%;
+    background-size:stretch;
+    border:0px solid transparent;
+    border-radius:0;
+    padding:0;
+}
+
+.navigation{
+    grid-area:navigation;
+    background:transparent;
+    border:0px solid transparent;
+}
+
+.content{
+    grid-area:content;
+}
+
+.content2{
+    grid-area:content2;
+}
+
+.content3{
+    grid-area:content3;
+}
+
+.content4{
+    grid-area:content4;
+}
+
+.content5{
+    grid-area:content5;
+}
+
+.sidebar{
+    grid-area:sidebar;
+    background:black;
+    border:0px solid transparent;
+    color:rgb(253, 253, 189);
+}
+
+.footnote{
+    grid-area:footnote;
+    border:0px solid transparent;
+}
